@@ -126,7 +126,7 @@
         <li>Your extracted code text, saved in your personal extraction history for 90 days so you can easily access previous snippets. You can rename or delete snippets at any time.</li>
       </ul>
       <p>
-        <strong>Anonymous Users:</strong> If you use CodeSnapper without signing in, no personal account information is collected. Your IP address is processed server-side solely to calculate and enforce the daily limit of 25 free extractions.
+        <strong>Anonymous Users:</strong> If you use CodeSnapper without signing in, no personal account information is collected. Your IP address is processed server-side solely to calculate and enforce the free extraction limit (25 total extractions without an account).
       </p>
     </div>
   </section>
@@ -145,15 +145,17 @@
     </div>
   </section>
 
-  <!-- ── 4. THIRD-PARTY AI SERVICES ── -->
+  <!-- ── 4. THIRD-PARTY SERVICES ── -->
   <section class="about-section" aria-labelledby="third-party-title">
     <p class="about-sec-label">Third Parties</p>
-    <h2 class="about-sec-title" id="third-party-title">4. Third-Party AI Services</h2>
+    <h2 class="about-sec-title" id="third-party-title">4. Third-Party Services &amp; Infrastructure</h2>
     <div class="about-body">
       <p>
-        CodeSnapper utilizes third-party infrastructure to power visual code recognition:
+        CodeSnapper utilizes trusted third-party infrastructure to host the application, store account data, and perform visual code recognition:
       </p>
       <ul>
+        <li><strong>Render:</strong> Cloud application platform providing hosting and server infrastructure (<a href="https://render.com/privacy" target="_blank" rel="noopener noreferrer" style="color:var(--violet-d);text-decoration:underline">Render Privacy Policy</a>).</li>
+        <li><strong>Turso:</strong> Managed cloud database provider used to securely store user accounts, rate limit records, and 90-day extraction history (<a href="https://turso.tech/privacy-policy" target="_blank" rel="noopener noreferrer" style="color:var(--violet-d);text-decoration:underline">Turso Privacy Policy</a>).</li>
         <li><strong>OpenRouter:</strong> Acts as our API gateway for model inference (<a href="https://openrouter.ai/terms" target="_blank" rel="noopener noreferrer" style="color:var(--violet-d);text-decoration:underline">OpenRouter Terms</a>).</li>
         <li><strong>Google Gemini Vision:</strong> Provides multimodal vision processing (<a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer" style="color:var(--violet-d);text-decoration:underline">Google Gemini API Terms</a>).</li>
       </ul>
