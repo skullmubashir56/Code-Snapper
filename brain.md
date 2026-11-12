@@ -31,7 +31,7 @@ State transitions use triple-layer hide (`class="hidden"`, attribute `hidden="tr
   - Client fetch timeout: `30000ms` (30 seconds)
 
 ## Rate Limits
-- **Anonymous**: 25 total extractions tracked server-side by IP (NOT localStorage)
+- **Anonymous**: 25 total extractions per IP with no reset, tracked server-side (NOT localStorage)
 - **Signed-in**: 50 extractions per rolling 24-hour window tracked server-side
 - **Counter display**: shows `X/25` for anonymous, `X/50` for signed-in
 - **Progress bar**:
