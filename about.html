@@ -252,9 +252,32 @@
     </h2>
 
     <div class="about-privacy-card">
-      <p class="about-privacy-desc">
-        Your images are never stored or logged. If you're signed in, only the extracted code text is saved to your personal history — nothing else. For sensitive code (API keys, passwords), crop to the relevant region before uploading.
-      </p>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px">
+        <li style="display:flex;gap:10px;align-items:flex-start">
+          <span style="color:#a78bfa;line-height:1.6">&#8226;</span>
+          <span class="about-privacy-desc">Images are sent to our server, which forwards them to Google Gemini via OpenRouter for extraction. Images are processed in memory and never written to disk or kept after extraction.</span>
+        </li>
+        <li style="display:flex;gap:10px;align-items:flex-start">
+          <span style="color:#a78bfa;line-height:1.6">&#8226;</span>
+          <span class="about-privacy-desc">Signed-in users: we store your email, a securely hashed password, and extracted code text in your history for 90 days.</span>
+        </li>
+        <li style="display:flex;gap:10px;align-items:flex-start">
+          <span style="color:#a78bfa;line-height:1.6">&#8226;</span>
+          <span class="about-privacy-desc">Anonymous users: your IP address is used server-side to enforce the free extraction limit.</span>
+        </li>
+        <li style="display:flex;gap:10px;align-items:flex-start">
+          <span style="color:#a78bfa;line-height:1.6">&#8226;</span>
+          <span class="about-privacy-desc">We use cookies for authentication and Google Analytics for usage statistics.</span>
+        </li>
+        <li style="display:flex;gap:10px;align-items:flex-start">
+          <span style="color:#a78bfa;line-height:1.6">&#8226;</span>
+          <span class="about-privacy-desc">Third parties that process images: <a href="https://openrouter.ai/terms" target="_blank" rel="noopener noreferrer" style="color:var(--violet-d);text-decoration:underline">OpenRouter</a> and <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer" style="color:var(--violet-d);text-decoration:underline">Google</a> (review their terms). Free-tier API data may be used by providers to improve models.</span>
+        </li>
+        <li style="display:flex;gap:10px;align-items:flex-start">
+          <span style="color:#a78bfa;line-height:1.6">&#8226;</span>
+          <span class="about-privacy-desc">Feedback reports you submit are stored so we can review them.</span>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -339,7 +362,7 @@
       <span class="footer-sep" aria-hidden="true">&middot;</span>
       <a href="about.html" class="footer-link">About</a>
       <span class="footer-sep" aria-hidden="true">&middot;</span>
-      <a href="about.html#privacy" class="footer-link">Privacy</a>
+      <a href="/privacy.html" class="footer-link">Privacy</a>
       <span class="footer-sep" aria-hidden="true">&middot;</span>
       <a href="terms.html" class="footer-link">Terms</a>
       <span class="footer-sep" aria-hidden="true">&middot;</span>
@@ -351,7 +374,7 @@
 <!-- Cookie Consent Banner -->
 <div id="cookie-banner" class="cookie-banner hidden" role="dialog" aria-label="Cookie consent">
   <p class="cookie-text">
-    We use cookies for authentication and usage tracking. By continuing, you agree to our <a href="/terms.html">Privacy Policy</a>.
+    We use cookies for authentication and usage tracking. By continuing, you agree to our <a href="/privacy.html">Privacy Policy</a>.
   </p>
   <div class="cookie-actions">
     <button type="button" class="btn btn-primary btn-sm" id="cookie-accept-btn">Accept</button>
